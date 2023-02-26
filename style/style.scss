@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px; 
+    margin-left: -15px;
 }
 
 .df {
@@ -79,27 +80,72 @@ a {
 /* // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|  header started  |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=// */
 header {
     nav {
-        .logo {
-            a {
-                i {
-                    color: rgb(21, 0, 255);
-                    font-size: 44px;
+        height: 70px;
+        background-color: #E5E5E5;
+
+        ul {
+            width: 450px;
+
+            .logo {
+                margin-right: 100px;
+
+                a {
+                    i {
+                        color: rgb(21, 0, 255);
+                        font-size: 44px;
+                    }
                 }
             }
-        }
-        ul {
-            width: 500px;
+
             li {
                 a {
                     color: #7E7F86;
-                    &:hover{
+
+                    &:hover {
                         color: #25202F;
                     }
                 }
             }
         }
-        .mbfk {
 
+        .mbfk {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--white);
+
+            i {
+                font-size: 20px;
+                color: #25202F;
+            }
         }
     }
+    img {
+        width: 100%;
+        background-position: center center;
+    }
 }
+
+// ==============================                                   nav bar media
+@media (max-width: 768px) {
+    header {
+        nav {
+            .container {
+                ul {
+                    .logo {
+                        a {
+                            i {}
+                        }
+                    }
+                }
+
+                .mbfk {
+                    i {}
+                }
+            }
+        }
+
+    }
+}
+
+// ==============================                                   nav bar media

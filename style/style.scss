@@ -79,14 +79,16 @@ a {
 /* // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|  header started  |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=// */
 header {
     nav {
-        .log{
+        .logo {
             a {
-                img {
-
+                i {
+                    color: rgb(21, 0, 255);
+                    font-size: 44px;
                 }
             }
         }
         ul {
+            width: 500px;
             li {
                 a {
                     color: #7E7F86;

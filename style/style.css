@@ -77,6 +77,13 @@ a {
 }
 
 /* // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|  header started  |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=// */
+header nav .logo a i {
+  color: rgb(21, 0, 255);
+  font-size: 44px;
+}
+header nav ul {
+  width: 500px;
+}
 header nav ul li a {
   color: #7E7F86;
 }

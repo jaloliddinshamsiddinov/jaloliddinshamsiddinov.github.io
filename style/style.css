@@ -76,16 +76,27 @@ a {
   background-repeat: no-repeat;
 }
 
+.height_100 {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
 /* // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|  header started  |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=// */
 header nav {
   height: 70px;
   background-color: #E5E5E5;
+  position: fixed;
 }
 header nav ul {
   width: 450px;
+  transition: 1s;
 }
 header nav ul .logo {
   margin-right: 100px;
+  transition: 1s;
 }
 header nav ul .logo a i {
   color: rgb(21, 0, 255);
@@ -110,4 +121,34 @@ header nav .mbfk i {
 header img {
   width: 100%;
   background-position: center center;
+}
+
+@media (max-width: 768px) {
+  header nav .container .navbar ul {
+    width: 350px;
+    transition: 1s;
+  }
+  header nav .container .navbar ul .logo {
+    margin-right: 0px;
+    transition: 1s;
+  }
+}
+@media (max-width: 576px) {
+  header nav .container .navbar ul {
+    width: 100%;
+  }
+  header nav .container .navbar ul li {
+    display: none;
+  }
+  header nav .container .navbar ul .logo {
+    display: block;
+  }
+  header nav .container .navbar .mbfk {
+    color: black;
+  }
+}
+.nav-active {
+  color: red;
+  background-color: red;
+  font-size: 100px;
 }/*# sourceMappingURL=style.css.map */

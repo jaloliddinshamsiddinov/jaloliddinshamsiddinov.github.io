@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Red Hat Display', sans-serif;
+    // transition: 1s;
 }
 
 :root {
@@ -77,17 +78,28 @@ a {
     background-repeat: no-repeat;
 }
 
+.height_100 {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
 /* // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|  header started  |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=// */
 header {
     nav {
         height: 70px;
         background-color: #E5E5E5;
+        position: fixed;
 
         ul {
             width: 450px;
+            transition: 1s;
 
             .logo {
                 margin-right: 100px;
+                transition: 1s;
 
                 a {
                     i {
@@ -120,6 +132,7 @@ header {
             }
         }
     }
+
     img {
         width: 100%;
         background-position: center center;
@@ -131,16 +144,49 @@ header {
     header {
         nav {
             .container {
-                ul {
-                    .logo {
-                        a {
-                            i {}
+                .navbar {
+                    ul {
+                        width: 350px;
+                        transition: 1s;
+
+                        .logo {
+                            margin-right: 0px;
+                            transition: 1s;
+
+                            a {
+                                i {}
+                            }
                         }
                     }
-                }
 
-                .mbfk {
-                    i {}
+                    .mbfk {
+                        i {}
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        nav {
+            .container {
+                .navbar {
+                    ul {
+                        width: 100%;
+                        li {
+                            display: none;
+                        }
+                        .logo {
+                            display: block;
+                        }
+                    }
+
+                    .mbfk {
+                        color: black;
+                    }
                 }
             }
         }
@@ -149,3 +195,9 @@ header {
 }
 
 // ==============================                                   nav bar media
+.nav-active {
+    color: red;
+    background-color: red;
+    font-size: 100px;
+
+}
